@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link href="/dist/output.css" rel="stylesheet" />
+
+        <title>Frontend Mentor | Blog preview card</title>
+    </head>
+    <body class="font-figtree">
+        <!-- Background -->
+        <div
+            class="bg-custom-yellow h-screen w-screen flex items-center justify-center"
+        >
+            <!-- Card -->
+            <div
+                class="container bg-white flex flex-col max-w-[350px] mx-auto rounded-3xl border-2 border-black shadow-[5px_5px_1px_0px_rgba(0,0,0,1)] hover:shadow-[15px_15px_1px_0px_rgba(0,0,0,1)] transition-all"
+            >
+                <!-- Image -->
+                <div class="container p-5 w-full">
+                    <img
+                        src="assets/images/illustration-article.svg"
+                        alt="Card Image"
+                        class="rounded-xl"
+                    />
+                </div>
+
+                <!-- Card Details -->
+                <div class="container p-5 flex flex-col gap-5">
+                    <!-- Tags -->
+                    <div class="container">
+                        <p
+                            class="font-bold text-xs bg-custom-yellow p-2 rounded-md inline"
+                        >
+                            Learning
+                        </p>
+                    </div>
+
+                    <!-- Publish Date -->
+                    <p class="text-xs">Published 21 Dec 2023</p>
+                    <!-- Card Header -->
+                    <h1
+                        class="font-bold text-xl hover:text-custom-yellow transition-all cursor-pointer"
+                    >
+                        HTML & CSS foundations
+                    </h1>
+                    <!-- Card Body -->
+                    <p class="text-sm text-gray-400">
+                        These languages are the backbone of every website,
+                        defining structure, content, and presentation.
+                    </p>
+                    <!-- Author -->
+                    <div class="container flex items-center">
+                        <img
+                            src="assets/images/image-avatar.webp"
+                            alt="author avatar image"
+                            class="w-9 mr-5"
+                        />
+                        <p class="text-sm font-bold">Greg Hooper</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-xs text-center fixed bottom-3 mx-auto w-full">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    class="text-blue-600"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#" class="text-blue-600">Troy Reuther</a>.
+            </div>
+        </div>
+    </body>
+</html>
